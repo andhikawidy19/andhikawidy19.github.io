@@ -144,28 +144,37 @@
     margin-bottom: 30px !important;
 }
 .portfolio-card {
-    background: rgba(255, 255, 255, 0.04);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: #1e1e1e !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
     border-radius: 8px;
     overflow: hidden;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     height: 100%;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35) !important;
 }
 .portfolio-card:hover {
     transform: translateY(-6px);
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    background: #252525 !important;
+    border-color: rgba(255, 139, 148, 0.6) !important;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5) !important;
 }
 .card-img-wrapper {
     position: relative;
     width: 100%;
-    padding-top: 60%; /* 5:3 Aspect Ratio */
+    padding-top: 58%; /* 16:9 Aspect Ratio */
     overflow: hidden;
-    background: #151515;
+    background: #111111;
+}
+.card-img-wrapper a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    cursor: pointer;
 }
 .card-img-wrapper img {
     position: absolute !important;
@@ -178,46 +187,53 @@
     border-radius: 0 !important;
 }
 .portfolio-card:hover .card-img-wrapper img {
-    transform: scale(1.06);
+    transform: scale(1.05);
 }
-.card-info {
-    padding: 20px;
+.portfolio-card .card-info {
+    padding: 22px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     text-align: left;
+    background: #1e1e1e !important;
 }
-.card-info h4 {
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 8px;
-    color: #fff;
-    letter-spacing: 0.25px;
-    text-transform: none;
+.portfolio-card .card-info h4 {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    margin-bottom: 6px !important;
+    color: #ffffff !important;
+    letter-spacing: 0.2px !important;
+    text-transform: none !important;
 }
-.card-info p {
-    font-size: 13px;
-    line-height: 1.5;
-    color: #bfbfbf;
-    margin-bottom: 15px;
+.portfolio-card .card-info .card-subtitle {
+    font-size: 13px !important;
+    color: #ff8b94 !important;
+    font-weight: 700 !important;
+    margin-bottom: 8px !important;
+}
+.portfolio-card .card-info p {
+    font-size: 13.5px !important;
+    line-height: 1.6 !important;
+    color: #d1d5db !important;
+    margin-bottom: 16px !important;
     flex-grow: 1;
 }
-.card-tags {
+.portfolio-card .card-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 6px;
     margin-top: auto;
 }
-.card-tag {
-    background: rgba(164, 63, 73, 0.15);
-    border: 1px solid rgba(164, 63, 73, 0.35);
-    color: #ff8b94;
-    font-size: 10px;
-    font-weight: 600;
-    padding: 3px 8px;
-    border-radius: 4px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+.portfolio-card .card-tag {
+    background: rgba(164, 63, 73, 0.25) !important;
+    border: 1px solid rgba(164, 63, 73, 0.5) !important;
+    color: #ff8b94 !important;
+    font-size: 10.5px !important;
+    font-weight: 600 !important;
+    padding: 4px 10px !important;
+    border-radius: 4px !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.4px !important;
 }
 
 /* 5. Profile Picture (Sidebar Menu) Customizations */

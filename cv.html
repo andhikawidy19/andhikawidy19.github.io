@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Andhika Widy Nugroho</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <style>
         * {
             box-sizing: border-box;
@@ -32,11 +35,12 @@
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
             display: flex;
             justify-content: center;
             gap: 12px;
         }
+
         .btn-action {
             display: inline-flex;
             align-items: center;
@@ -52,13 +56,16 @@
             cursor: pointer;
             transition: all 0.2s ease;
         }
+
         .btn-action:hover {
             background: #1d4ed8;
             transform: translateY(-1px);
         }
+
         .btn-action.btn-secondary {
             background: #374151;
         }
+
         .btn-action.btn-secondary:hover {
             background: #4b5563;
         }
@@ -70,7 +77,7 @@
             margin: 20px auto;
             background: #ffffff;
             display: flex;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
             position: relative;
             overflow: hidden;
         }
@@ -103,11 +110,12 @@
             border: 3.5px solid #222222;
             padding: 5px;
             background: #ffffff;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.18);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.18);
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: -80px; /* Overlap ke kotak hitam di bawahnya */
+            margin-bottom: -80px;
+            /* Overlap ke kotak hitam di bawahnya */
         }
 
         .photo-circle-container img {
@@ -126,7 +134,8 @@
             flex-grow: 1;
             border-top-left-radius: 35px;
             border-top-right-radius: 35px;
-            padding: 95px 22px 25px 22px; /* Ruang atas untuk lengkungan lingkaran foto */
+            padding: 95px 22px 25px 22px;
+            /* Ruang atas untuk lengkungan lingkaran foto */
             display: flex;
             flex-direction: column;
             box-sizing: border-box;
@@ -373,11 +382,13 @@
             .action-bar {
                 display: none !important;
             }
+
             body {
                 background: none;
                 margin: 0;
                 padding: 0;
             }
+
             .resume-page {
                 width: 100%;
                 min-height: 100%;
@@ -388,33 +399,49 @@
         }
     </style>
 </head>
+
 <body>
 
     <!-- Bar Navigasi Aksi (Hanya muncul di web, tidak tercetak) -->
     <div class="action-bar">
         <a href="CV-Andhika-Widy-Nugroho.pdf" download="CV - Andhika Widy Nugroho.pdf" class="btn-action">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
             Download PDF
         </a>
         <button onclick="window.print()" class="btn-action btn-secondary">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
             Cetak CV / Print
         </button>
         <a href="index.html" class="btn-action btn-secondary">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
             Kembali ke Portfolio
         </a>
     </div>
 
     <!-- Halaman Resume / CV -->
     <div class="resume-page">
-        
+
         <!-- SIDEBAR KIRI -->
         <div class="sidebar">
             <!-- Bagian Atas: Foto Profil Lingkaran dengan Outline Sesuai PDF -->
             <div class="photo-outer-wrapper">
                 <div class="photo-circle-container">
-                    <img src="assets/images/andhika.png" onerror="this.src='https://i.ibb.co.com/6R05mGf/image.png'" alt="Andhika Widy Nugroho">
+                    <img src="assets/images/andhika.png" onerror="this.src='https://i.ibb.co.com/6R05mGf/image.png'"
+                        alt="Andhika Widy Nugroho">
                 </div>
             </div>
 
@@ -424,7 +451,11 @@
                 <div class="sidebar-section">
                     <div class="sidebar-title">About Me</div>
                     <div class="sidebar-text">
-                        Lulusan Sarjana Ilmu Komunikasi dari UPN "Veteran" Jawa Timur dengan IPK 3.59 yang memiliki ketertarikan kuat dan pengalaman praktis di bidang Social Media Specialist dan Digital Marketing. Terbiasa merancang content planning, memproduksi konten visual dan video, serta meningkatkan brand awareness melalui strategi media sosial yang terarah. Kreatif, inovatif, dan siap memberikan kontribusi optimal bagi perusahaan.
+                        Lulusan Sarjana Ilmu Komunikasi dari UPN "Veteran" Jawa Timur dengan IPK 3.59 yang memiliki
+                        ketertarikan kuat dan pengalaman praktis di bidang Social Media Specialist dan Digital
+                        Marketing. Terbiasa merancang content planning, memproduksi konten visual dan video, serta
+                        meningkatkan brand awareness melalui strategi media sosial yang terarah. Kreatif, inovatif, dan
+                        siap memberikan kontribusi optimal bagi perusahaan.
                     </div>
                 </div>
 
@@ -434,19 +465,22 @@
                     <ul class="contact-list">
                         <li class="contact-item">
                             <svg class="contact-icon" viewBox="0 0 24 24">
-                                <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                                <path
+                                    d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
                             </svg>
                             <span>082143443676</span>
                         </li>
                         <li class="contact-item">
                             <svg class="contact-icon" viewBox="0 0 24 24">
-                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                <path
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
                             </svg>
                             <span>andhikawidy19@gmail.com</span>
                         </li>
                         <li class="contact-item">
                             <svg class="contact-icon" viewBox="0 0 24 24">
-                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                                <path
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                             </svg>
                             <span>Sidoarjo, Jawa Timur</span>
                         </li>
@@ -456,7 +490,7 @@
                 <!-- Skills -->
                 <div class="sidebar-section">
                     <div class="sidebar-title">Skills</div>
-                    
+
                     <span class="skills-group-title">Hard Skills:</span>
                     <ul class="skills-list">
                         <li>Social Media Management</li>
@@ -482,7 +516,7 @@
 
         <!-- MAIN CONTENT KANAN -->
         <div class="main-content">
-            
+
             <!-- Header Nama & Title -->
             <div class="main-header">
                 <h1 class="candidate-name">Andhika<br>Widy Nugroho</h1>
@@ -494,7 +528,7 @@
             <div class="content-section">
                 <div class="section-header">
                     <svg viewBox="0 0 24 24">
-                        <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/>
+                        <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z" />
                     </svg>
                     <h2>Education</h2>
                 </div>
@@ -504,7 +538,10 @@
                         <div class="item-period">(2022 – 2026)</div>
                         <div class="item-role">UPN "VETERAN" JAWA TIMUR</div>
                         <div class="item-company">Sarjana Ilmu Komunikasi</div>
-                        <div style="font-size: 10.5px; font-weight: 600; color: #1a1a1a;">IPK: 3.59 / 4.00</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="item-period">(2019 – 2022)</div>
+                        <div class="item-role">SMA NEGERI 15 SURABAYA</div>
                     </div>
                 </div>
             </div>
@@ -513,13 +550,14 @@
             <div class="content-section">
                 <div class="section-header">
                     <svg viewBox="0 0 24 24">
-                        <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/>
+                        <path
+                            d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z" />
                     </svg>
                     <h2>Experience</h2>
                 </div>
 
                 <div class="timeline-container">
-                    
+
                     <!-- Item 1 -->
                     <div class="timeline-item">
                         <div class="item-period">(Februari 2025 – Juni 2025)</div>
@@ -527,9 +565,11 @@
                         <div class="item-company">PT. Indo Lautan Makmur</div>
                         <ul class="item-bullets">
                             <li>Menyusun dan mengeksekusi content planning perusahaan secara komprehensif.</li>
-                            <li>Mengelola pembuatan konten media sosial (Instagram) secara rutin untuk meningkatkan brand awareness perusahaan.</li>
+                            <li>Mengelola pembuatan konten media sosial (Instagram) secara rutin untuk meningkatkan
+                                brand awareness perusahaan.</li>
                             <li>Merancang dan mendesain poster produk komersial yang dipasarkan oleh perusahaan.</li>
-                            <li>Berpartisipasi aktif dalam produksi video company profile sebagai talent dan crew lighting.</li>
+                            <li>Berpartisipasi aktif dalam produksi video company profile sebagai talent dan crew
+                                lighting.</li>
                         </ul>
                     </div>
 
@@ -539,8 +579,10 @@
                         <div class="item-role">SOCIAL MEDIA SPECIALIST</div>
                         <div class="item-company">The Vinyl Chick</div>
                         <ul class="item-bullets">
-                            <li>Merancang perencanaan konten (content planning) kafe agar selaras dengan target audiens.</li>
-                            <li>Memproduksi konten media sosial secara rutin untuk mendongkrak visibilitas dan brand awareness kafe.</li>
+                            <li>Merancang perencanaan konten (content planning) kafe agar selaras dengan target audiens.
+                            </li>
+                            <li>Memproduksi konten media sosial secara rutin untuk mendongkrak visibilitas dan brand
+                                awareness kafe.</li>
                             <li>Berperan aktif sebagai talent dalam berbagai konten kreatif kafe.</li>
                         </ul>
                     </div>
@@ -551,8 +593,10 @@
                         <div class="item-role">VOLUNTEER</div>
                         <div class="item-company">Generasi Bebas Plastik by Novo Group</div>
                         <ul class="item-bullets">
-                            <li>Membuat konten edukasi publik guna meningkatkan kesadaran masyarakat dalam mengurangi penggunaan sampah plastik sehari-hari.</li>
-                            <li>Berkolaborasi dalam proyek akhir bersama bank sampah setempat untuk memproduksi konten edukasi mengenai proses pengelolaan sampah plastik.</li>
+                            <li>Membuat konten edukasi publik guna meningkatkan kesadaran masyarakat dalam mengurangi
+                                penggunaan sampah plastik sehari-hari.</li>
+                            <li>Berkolaborasi dalam proyek akhir bersama bank sampah setempat untuk memproduksi konten
+                                edukasi mengenai proses pengelolaan sampah plastik.</li>
                         </ul>
                     </div>
 
@@ -563,7 +607,8 @@
                         <div class="item-company">KPU Jatim (Rekapitulasi Pemilu 2024)</div>
                         <ul class="item-bullets">
                             <li>Mengoperasikan fasilitas 360° photobooth yang disediakan oleh KPU Jatim.</li>
-                            <li>Mengajak dan mengarahkan tamu undangan untuk berpartisipasi mencoba fasilitas 360° photobooth secara interaktif.</li>
+                            <li>Mengajak dan mengarahkan tamu undangan untuk berpartisipasi mencoba fasilitas 360°
+                                photobooth secara interaktif.</li>
                         </ul>
                     </div>
 
@@ -577,4 +622,5 @@
     </div>
 
 </body>
+
 </html>

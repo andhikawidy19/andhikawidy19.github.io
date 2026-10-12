@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Andhika Widy Nugroho</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f2f5;
+            color: #222;
+            font-size: 13px;
+            line-height: 1.4;
+        }
+        .action-bar {
+            text-align: center;
+            padding: 15px;
+            background: #1f2937;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+        }
+        .btn-action {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #2563eb;
+            color: white;
+            padding: 9px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 13px;
+            border: none;
+            cursor: pointer;
+            transition: background 0.2s ease, transform 0.1s ease;
+        }
+        .btn-action:hover {
+            background: #1d4ed8;
+            transform: translateY(-1px);
+        }
+        .btn-action.btn-secondary {
+            background: #4b5563;
+        }
+        .btn-action.btn-secondary:hover {
+            background: #374151;
+        }
+        .resume-container {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 20px auto;
+            background: #fff;
+            display: flex;
+            box-sizing: border-box;
+            padding: 15mm 20mm;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        .sidebar {
+            width: 34%;
+            padding-right: 20px;
+            border-right: 2px solid #333;
+            box-sizing: border-box;
+        }
+        .main-content {
+            width: 66%;
+            padding-left: 20px;
+            box-sizing: border-box;
+        }
+        .profile-img-container {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #333;
+        }
+        .name {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .title {
+            font-size: 12px;
+            text-align: center;
+            color: #555;
+            margin-bottom: 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        h3 {
+            font-size: 13px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #333;
+            padding-bottom: 3px;
+            margin-top: 18px;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+        .section-content {
+            margin-bottom: 12px;
+        }
+        ul {
+            padding-left: 15px;
+            margin: 4px 0;
+        }
+        li {
+            margin-bottom: 3px;
+        }
+        .job-title {
+            font-weight: bold;
+            margin-top: 8px;
+            font-size: 13px;
+        }
+        .job-company {
+            font-style: italic;
+            color: #444;
+        }
+        .job-date {
+            font-size: 11px;
+            color: #666;
+            margin-bottom: 3px;
+        }
+        @media print {
+            .action-bar {
+                display: none !important;
+            }
+            body {
+                background: none;
+                margin: 0;
+                padding: 0;
+            }
+            .resume-container {
+                width: 100%;
+                padding: 10mm 15mm;
+                margin: 0;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="action-bar">
+        <a href="CV-Andhika-Widy-Nugroho.pdf" download="CV - Andhika Widy Nugroho.pdf" class="btn-action">
+            ⬇️ Download PDF
+        </a>
+        <button onclick="window.print()" class="btn-action btn-secondary">
+            🖨️ Cetak CV / Print
+        </button>
+        <a href="index.html" class="btn-action btn-secondary">
+            ⬅️ Kembali ke Portfolio
+        </a>
+    </div>
+
+    <div class="resume-container">
+        <!-- Sidebar Kiri -->
+        <div class="sidebar">
+            <div class="profile-img-container">
+                <!-- Foto profil Andhika -->
+                <img src="https://i.ibb.co.com/6R05mGf/image.png" onerror="this.src='assets/images/andhika-profile.png'" alt="Andhika Widy Nugroho" class="profile-img">
+            </div>
+            
+            <div class="name">Andhika Widy Nugroho</div>
+            <div class="title">Social Media Specialist</div>
+
+            <h3>Kontak</h3>
+            <div class="section-content">
+                <p>📍 Sidoarjo, Jawa Timur<br>
+                📞 082143443676<br>
+                ✉️ andhikawidy19@gmail.com</p>
+            </div>
+
+            <h3>Keahlian</h3>
+            <div class="section-content">
+                <strong>Hard Skills:</strong>
+                <ul>
+                    <li>Social Media Management</li>
+                    <li>Content Planning</li>
+                    <li>Copywriting</li>
+                    <li>Content Creation</li>
+                    <li>CapCut & Canva</li>
+                    <li>Microsoft Office</li>
+                    <li>Risk Management</li>
+                </ul>
+                <strong style="margin-top: 8px; display: block;">Soft Skills:</strong>
+                <ul>
+                    <li>Kerja sama tim</li>
+                    <li>Manajemen waktu</li>
+                    <li>Komunikasi strategis</li>
+                    <li>Pemecahan masalah</li>
+                    <li>Kreatif & Inovatif</li>
+                </ul>
+            </div>
+
+            <h3>Pendidikan</h3>
+            <div class="section-content">
+                <div class="job-title">UPN "VETERAN" JAWA TIMUR</div>
+                <div class="job-date">(2022 – 2026)</div>
+                <div>Sarjana Ilmu Komunikasi</div>
+                <div><strong>IPK:</strong> 3.59 / 4.00</div>
+            </div>
+        </div>
+
+        <!-- Main Content Kanan -->
+        <div class="main-content">
+            <h3>Ringkasan Profesional</h3>
+            <div class="section-content">
+                <p>Lulusan Sarjana Ilmu Komunikasi dari UPN "Veteran" Jawa Timur dengan IPK 3.59 yang memiliki ketertarikan kuat dan pengalaman praktis di bidang Social Media Specialist dan Digital Marketing. Terbiasa merancang content planning, memproduksi konten visual dan video, serta meningkatkan brand awareness melalui strategi media sosial yang terarah. Kreatif, inovatif, dan siap memberikan kontribusi optimal bagi perusahaan.</p>
+            </div>
+
+            <h3>Pengalaman Kerja & Organisasi</h3>
+            
+            <div class="section-content">
+                <div class="job-title">DIGITAL MARKETING (MAGANG)</div>
+                <div class="job-company">PT. Indo Lautan Makmur</div>
+                <div class="job-date">Februari 2025 – Juni 2025</div>
+                <ul>
+                    <li>Menyusun dan mengeksekusi content planning perusahaan secara komprehensif.</li>
+                    <li>Mengelola pembuatan konten media sosial (Instagram) secara rutin untuk meningkatkan brand awareness perusahaan.</li>
+                    <li>Merancang dan mendesain poster produk komersial yang dipasarkan oleh perusahaan.</li>
+                    <li>Berpartisipasi aktif dalam produksi video company profile sebagai talent dan crew lighting.</li>
+                </ul>
+            </div>
+
+            <div class="section-content">
+                <div class="job-title">SOCIAL MEDIA SPECIALIST</div>
+                <div class="job-company">The Vinyl Chick</div>
+                <div class="job-date">September 2024 – November 2024</div>
+                <ul>
+                    <li>Merancang perencanaan konten (content planning) kafe agar selaras dengan target audiens.</li>
+                    <li>Memproduksi konten media sosial secara rutin untuk mendongkrak visibilitas dan brand awareness kafe.</li>
+                    <li>Berperan aktif sebagai talent dalam berbagai konten kreatif kafe.</li>
+                </ul>
+            </div>
+
+            <div class="section-content">
+                <div class="job-title">VOLUNTEER</div>
+                <div class="job-company">Generasi Bebas Plastik by Novo Group</div>
+                <div class="job-date">Januari 2024 – Agustus 2024</div>
+                <ul>
+                    <li>Membuat konten edukasi publik guna meningkatkan kesadaran masyarakat dalam mengurangi penggunaan sampah plastik sehari-hari.</li>
+                    <li>Berkolaborasi dalam proyek akhir (final project) bersama bank sampah setempat untuk memproduksi konten edukasi mengenai proses pengelolaan sampah plastik.</li>
+                </ul>
+            </div>
+
+            <div class="section-content">
+                <div class="job-title">VOLUNTEER PHOTOBOOTH CREW</div>
+                <div class="job-company">KPU Jatim (Rekapitulasi Pemilu 2024)</div>
+                <div class="job-date">Maret 2024</div>
+                <ul>
+                    <li>Mengoperasikan fasilitas 360° photobooth yang disediakan oleh KPU Jatim.</li>
+                    <li>Mengajak dan mengarahkan tamu undangan untuk berpartisipasi mencoba fasilitas 360° photobooth dengan interaktif.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

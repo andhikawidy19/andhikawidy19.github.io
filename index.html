@@ -44,6 +44,8 @@ https://templatemo.com/tm-531-reflux
               <li><a href="#section1">About Me</a></li>
               <li><a href="#section2">Experience</a></li>
               <li><a href="#section3">Portofolio</a></li>
+              <li><a href="CV-Andhika-Widy-Nugroho.pdf" download="CV - Andhika Widy Nugroho.pdf"><i class="fa fa-download"></i> Download CV</a></li>
+              <li><a href="cv.html" target="_blank"><i class="fa fa-print"></i> Cetak CV</a></li>
             </ul>
           </nav>
           <div class="social-network">
@@ -78,6 +80,7 @@ https://templatemo.com/tm-531-reflux
           </p>
           <div class="cta-container">
             <a href="#section3" class="btn-custom btn-custom-primary"><i class="fa fa-eye"></i> View My Work</a>
+            <a href="CV-Andhika-Widy-Nugroho.pdf" download="CV - Andhika Widy Nugroho.pdf" class="btn-custom btn-custom-primary"><i class="fa fa-download"></i> Download CV</a>
             <a href="https://www.linkedin.com/in/yudhit-widy-wicaksono-54a5a714a/" target="_blank"
               class="btn-custom btn-custom-secondary"><i class="fa fa-linkedin"></i> Connect on LinkedIn</a>
           </div>
@@ -567,8 +570,11 @@ https://templatemo.com/tm-531-reflux
     };
 
     $(".main-menu, .cta-container").on("click", "a", function (e) {
-      e.preventDefault();
-      showSection($(this).attr("href"), true);
+      var href = $(this).attr("href");
+      if (href && href.startsWith("#")) {
+        e.preventDefault();
+        showSection(href, true);
+      }
     });
 
     $(window).scroll(function () {

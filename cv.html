@@ -70,6 +70,41 @@
             background: #4b5563;
         }
 
+        .cv-lang-switcher {
+            display: inline-flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.22);
+            border-radius: 20px;
+            padding: 2px 4px;
+            gap: 3px;
+            margin-left: 6px;
+        }
+
+        .cv-lang-btn {
+            border: none;
+            background: transparent;
+            color: #d1d5db;
+            padding: 5px 12px;
+            border-radius: 14px;
+            font-size: 11px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            outline: none;
+        }
+
+        .cv-lang-btn:hover {
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .cv-lang-btn.active {
+            background: #2563eb;
+            color: #ffffff;
+            box-shadow: 0 2px 8px rgba(37, 99, 235, 0.45);
+        }
+
         /* Resume A4 Container */
         .resume-page {
             width: 210mm;
@@ -411,7 +446,7 @@
                 <polyline points="7 10 12 15 17 10"></polyline>
                 <line x1="12" y1="15" x2="12" y2="3"></line>
             </svg>
-            Download PDF
+            <span data-i18n="cv_download_pdf">Download PDF</span>
         </a>
         <button onclick="window.print()" class="btn-action btn-secondary">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
@@ -420,7 +455,7 @@
                 <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
                 <rect x="6" y="14" width="12" height="8"></rect>
             </svg>
-            Print CV
+            <span data-i18n="cv_print_btn">Print CV</span>
         </button>
         <a href="index.html" class="btn-action btn-secondary">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
@@ -428,8 +463,13 @@
                 <line x1="19" y1="12" x2="5" y2="12"></line>
                 <polyline points="12 19 5 12 12 5"></polyline>
             </svg>
-            Back to Portfolio
+            <span data-i18n="cv_back_home">Back to Portfolio</span>
         </a>
+        <!-- Switcher Bahasa di CV -->
+        <div class="cv-lang-switcher" role="group" aria-label="Language Selector">
+            <button type="button" class="cv-lang-btn" data-lang="id" title="Bahasa Indonesia">🇮🇩 ID</button>
+            <button type="button" class="cv-lang-btn" data-lang="en" title="English">🇬🇧 EN</button>
+        </div>
     </div>
 
     <!-- Halaman Resume / CV -->
@@ -449,15 +489,15 @@
             <div class="sidebar-dark-box">
                 <!-- About Me -->
                 <div class="sidebar-section">
-                    <div class="sidebar-title">About Me</div>
-                    <div class="sidebar-text">
+                    <div class="sidebar-title" data-i18n="cv_about_title">About Me</div>
+                    <div class="sidebar-text" data-i18n="cv_about_text">
                         Bachelor of Communication Science graduate from UPN "Veteran" Jawa Timur with a 3.59 GPA, possessing a strong passion and hands-on experience in Social Media Management and Digital Marketing. Adept at designing content strategies, producing visual and video content, and driving brand awareness through targeted social media campaigns. Creative, innovative, and eager to deliver impactful contributions to the company.
                     </div>
                 </div>
 
                 <!-- Contact -->
                 <div class="sidebar-section">
-                    <div class="sidebar-title">Contact</div>
+                    <div class="sidebar-title" data-i18n="cv_contact_title">Contact</div>
                     <ul class="contact-list">
                         <li class="contact-item">
                             <svg class="contact-icon" viewBox="0 0 24 24">
@@ -478,16 +518,16 @@
                                 <path
                                     d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
                             </svg>
-                            <span>Sidoarjo, East Java, Indonesia</span>
+                            <span data-i18n="cv_address">Sidoarjo, East Java, Indonesia</span>
                         </li>
                     </ul>
                 </div>
 
                 <!-- Skills -->
                 <div class="sidebar-section">
-                    <div class="sidebar-title">Skills</div>
+                    <div class="sidebar-title" data-i18n="cv_skills_title">Skills</div>
 
-                    <span class="skills-group-title">Hard Skills:</span>
+                    <span class="skills-group-title" data-i18n="cv_hard_skills_group">Hard Skills:</span>
                     <ul class="skills-list">
                         <li>Social Media Management</li>
                         <li>Content Planning</li>
@@ -498,13 +538,13 @@
                         <li>Risk Management</li>
                     </ul>
 
-                    <span class="skills-group-title" style="margin-top: 8px;">Soft Skills:</span>
+                    <span class="skills-group-title" style="margin-top: 8px;" data-i18n="cv_soft_skills_group">Soft Skills:</span>
                     <ul class="skills-list">
-                        <li>Teamwork & Collaboration</li>
-                        <li>Time Management</li>
-                        <li>Strategic Communication</li>
-                        <li>Problem Solving</li>
-                        <li>Creative & Innovative Thinking</li>
+                        <li data-i18n="cv_soft_1">Teamwork & Collaboration</li>
+                        <li data-i18n="cv_soft_2">Time Management</li>
+                        <li data-i18n="cv_soft_3">Strategic Communication</li>
+                        <li data-i18n="cv_soft_4">Problem Solving</li>
+                        <li data-i18n="cv_soft_5">Creative & Innovative Thinking</li>
                     </ul>
                 </div>
             </div>
@@ -526,20 +566,20 @@
                     <svg viewBox="0 0 24 24">
                         <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z" />
                     </svg>
-                    <h2>Education</h2>
+                    <h2 data-i18n="cv_edu_title">Education</h2>
                 </div>
 
                 <div class="timeline-container">
                     <div class="timeline-item">
                         <div class="item-period">(2022 – 2026)</div>
                         <div class="item-role">UPN "VETERAN" JAWA TIMUR</div>
-                        <div class="item-company">Bachelor of Communication Science</div>
-                        <div style="font-size: 10.5px; font-weight: 600; color: #1a1a1a;">GPA: 3.59 / 4.00</div>
+                        <div class="item-company" data-i18n="cv_edu_upn_sub">Bachelor of Communication Science</div>
+                        <div style="font-size: 10.5px; font-weight: 600; color: #1a1a1a;" data-i18n="cv_edu_upn_gpa">GPA: 3.59 / 4.00</div>
                     </div>
                     <div class="timeline-item">
                         <div class="item-period">(2019 – 2022)</div>
                         <div class="item-role">SMA NEGERI 15 SURABAYA</div>
-                        <div class="item-company">High School Diploma</div>
+                        <div class="item-company" data-i18n="cv_edu_sma_sub">High School Diploma</div>
                     </div>
                 </div>
             </div>
@@ -551,55 +591,55 @@
                         <path
                             d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z" />
                     </svg>
-                    <h2>Experience</h2>
+                    <h2 data-i18n="cv_exp_title">Experience</h2>
                 </div>
 
                 <div class="timeline-container">
 
                     <!-- Item 1 -->
                     <div class="timeline-item">
-                        <div class="item-period">(February 2025 – June 2025)</div>
-                        <div class="item-role">DIGITAL MARKETING (INTERN)</div>
+                        <div class="item-period" data-i18n="cv_exp_1_period">(February 2025 – June 2025)</div>
+                        <div class="item-role" data-i18n="cv_exp_1_role">DIGITAL MARKETING (INTERN)</div>
                         <div class="item-company">PT. Indo Lautan Makmur</div>
                         <ul class="item-bullets">
-                            <li>Formulated and executed comprehensive corporate content planning across digital platforms.</li>
-                            <li>Managed routine social media content creation (Instagram) to elevate brand awareness and engagement.</li>
-                            <li>Designed promotional posters for commercial products marketed by the company.</li>
-                            <li>Actively contributed to company profile video production as on-camera talent and lighting crew.</li>
+                            <li data-i18n="cv_exp_1_b1">Formulated and executed comprehensive corporate content planning across digital platforms.</li>
+                            <li data-i18n="cv_exp_1_b2">Managed routine social media content creation (Instagram) to elevate brand awareness and engagement.</li>
+                            <li data-i18n="cv_exp_1_b3">Designed promotional posters for commercial products marketed by the company.</li>
+                            <li data-i18n="cv_exp_1_b4">Actively contributed to company profile video production as on-camera talent and lighting crew.</li>
                         </ul>
                     </div>
 
                     <!-- Item 2 -->
                     <div class="timeline-item">
-                        <div class="item-period">(September 2024 – November 2024)</div>
-                        <div class="item-role">SOCIAL MEDIA SPECIALIST</div>
+                        <div class="item-period" data-i18n="cv_exp_2_period">(September 2024 – November 2024)</div>
+                        <div class="item-role" data-i18n="cv_exp_2_role">SOCIAL MEDIA SPECIALIST</div>
                         <div class="item-company">The Vinyl Chick</div>
                         <ul class="item-bullets">
-                            <li>Developed strategic content plans tailored to resonate with the target audience.</li>
-                            <li>Routinely produced creative social media content to boost cafe visibility and brand presence.</li>
-                            <li>Actively performed as creative talent across various cafe promotional media.</li>
+                            <li data-i18n="cv_exp_2_b1">Developed strategic content plans tailored to resonate with the target audience.</li>
+                            <li data-i18n="cv_exp_2_b2">Routinely produced creative social media content to boost cafe visibility and brand presence.</li>
+                            <li data-i18n="cv_exp_2_b3">Actively performed as creative talent across various cafe promotional media.</li>
                         </ul>
                     </div>
 
                     <!-- Item 3 -->
                     <div class="timeline-item">
-                        <div class="item-period">(January 2024 – August 2024)</div>
-                        <div class="item-role">VOLUNTEER</div>
+                        <div class="item-period" data-i18n="cv_exp_3_period">(January 2024 – August 2024)</div>
+                        <div class="item-role" data-i18n="cv_exp_3_role">VOLUNTEER</div>
                         <div class="item-company">Generasi Bebas Plastik by Novo Group</div>
                         <ul class="item-bullets">
-                            <li>Produced public educational content to raise awareness about reducing daily plastic waste.</li>
-                            <li>Collaborated on a community final project with local waste banks to create educational media regarding plastic waste recycling.</li>
+                            <li data-i18n="cv_exp_3_b1">Produced public educational content to raise awareness about reducing daily plastic waste.</li>
+                            <li data-i18n="cv_exp_3_b2">Collaborated on a community final project with local waste banks to create educational media regarding plastic waste recycling.</li>
                         </ul>
                     </div>
 
                     <!-- Item 4 -->
                     <div class="timeline-item">
-                        <div class="item-period">(March 2024)</div>
-                        <div class="item-role">VOLUNTEER PHOTOBOOTH CREW</div>
-                        <div class="item-company">KPU Jatim (2024 Election Recapitulation)</div>
+                        <div class="item-period" data-i18n="cv_exp_4_period">(March 2024)</div>
+                        <div class="item-role" data-i18n="cv_exp_4_role">VOLUNTEER PHOTOBOOTH CREW</div>
+                        <div class="item-company" data-i18n="cv_exp_4_comp">KPU Jatim (2024 Election Recapitulation)</div>
                         <ul class="item-bullets">
-                            <li>Operated interactive 360° photobooth equipment provided by KPU Jatim.</li>
-                            <li>Welcomed and guided event guests to participate interactively in the 360° photobooth experience.</li>
+                            <li data-i18n="cv_exp_4_b1">Operated interactive 360° photobooth equipment provided by KPU Jatim.</li>
+                            <li data-i18n="cv_exp_4_b2">Welcomed and guided event guests to participate interactively in the 360° photobooth experience.</li>
                         </ul>
                     </div>
 
@@ -612,6 +652,7 @@
         </div>
     </div>
 
+    <script src="assets/js/translations.js"></script>
 </body>
 
 </html>
